@@ -1,4 +1,148 @@
-.window{
-    text-align: center;
-    margin: 0 auto;
+/* Main */
+body{
+    margin:0;
+    background-color: rgba(238, 178, 12, 0.781);
 }
+.container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+}
+/* Window */
+.video{
+    width:100%;
+}
+.window{
+    width:100%;
+    max-width: 1000px;
+    position: relative;
+    overflow: hidden;
+}
+.window:hover .controls{
+    transform:translateY(0);
+}
+/* Buttons */
+.controls{
+    display:flex;
+    position:absolute;
+    bottom: 0;
+    width: 100%;
+    flex-wrap:wrap;
+    background:rgba(168, 168, 168, 0.897);
+    transform:translateY(100%) translateY(-5px);
+    transition: all .2s;
+}
+.button1{
+    padding:5px;
+}
+.button1 button{
+    background: none;
+    border:0;
+    outline:0;
+    cursor:pointer;
+}
+.button1 button:before{
+    content:"";
+    background: url('https://img.icons8.com/fluent/48/000000/play.png');
+    background-size: 100%;
+    width:30px;
+    height:30px;
+    display:inline-block;
+    font-size:28px;
+    -webkit-font-smoothing: antialiased;
+}
+.button1 button.play:before{
+    content:"";
+    background: url('https://img.icons8.com/fluent/48/000000/play.png');
+    background-size: 100%;
+    width:30px;
+    height:30px;
+    display:inline-block;
+    font-size:28px;
+    -webkit-font-smoothing: antialiased;
+}
+.button1 button.pause:before{
+    content:"";
+    background: url('https://img.icons8.com/fluent/48/000000/pause.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width:30px;
+    height:30px;
+    display:inline-block;
+    font-size:28px;
+    -webkit-font-smoothing: antialiased;
+}
+.media_bar{
+    height:5px;
+    top:0;
+    left:0;
+    width:100%;
+    background:rgb(255, 255, 255);
+}
+.orange_bar{
+    height:5px;
+    width:100px;
+    background-color: rgb(13, 118, 255);
+}
+    /* Forward */
+.button2 button{
+    background: none;
+    border:0;
+    outline:0;
+    cursor:pointer;
+}
+.button2 button:before{
+    content:"";
+    background: url('https://img.icons8.com/fluent/48/4a90e2/rewind.png');
+    background-size: 100%;
+    width:30px;
+    height:30px;
+    display:inline-block;
+    font-size:28px;
+    -webkit-font-smoothing: antialiased;
+}
+.button2{
+    padding:5px;
+}
+    /* Backward */
+.button3 button{
+    background: none;
+    border:0;
+    outline:0;
+    cursor:pointer;
+}
+.button3 button:before{
+    content:"";
+    background: url('https://img.icons8.com/fluent/48/000000/fast-forward.png');
+    background-size: 100%;
+    width:30px;
+    height:30px;
+    display:inline-block;
+    font-size:28px;
+    -webkit-font-smoothing: antialiased;
+}
+.button3{
+    padding:5px;
+}
+/* Sound */
+.button4 button{
+    background: none;
+    border:0;
+    outline:0;
+    cursor:pointer;
+}
+.button4 button:before{
+    content:"";
+    background: url('https://img.icons8.com/fluent/48/4a90e2/speaker.png');
+    background-size: 100%;
+    width:30px;
+    height:30px;
+    display:inline-block;
+    font-size:28px;
+    -webkit-font-smoothing: antialiased;
+}
+.button4{
+    padding:5px;
+}
+   

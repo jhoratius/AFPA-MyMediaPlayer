@@ -6,11 +6,30 @@
         <link href="assets/CSS/media.css" rel="stylesheet" type="text/css">
     </head>
     <body>
-        <div class="window">
-            <video controls height="500px" intrinsicsize="">
-                <source src="assets/Media/beastars_ending2_s2.mp4" type="video/mp4">
-                <source src="assets/Media/beastars_ending2_s2.webm" type="video/webm">
-            </video>
+        <div class="container">
+            <div class="window">
+                <video class="video">
+                    <source src="assets/Media/beastars_ending2_s2.mp4" type="video/mp4">
+                    <source src="assets/Media/beastars_ending2_s2.webm" type="video/webm">
+                </video>
+                <div class="controls">
+                    <div class="media_bar">
+                        <div class="orange_bar"></div>
+                    </div>
+                    <div class="button1">
+                        <button id="play_pause"></button>
+                    </div>
+                    <div class="button2">
+                        <button class="forward"></button>
+                    </div>
+                    <div class="button3">
+                        <button class="backward"></button>
+                    </div>
+                    <div class="button4">
+                        <button class="sound"></button>
+                    </div>
+                </div>
+            </div>
         </div>
         <script src="assets/JS/media.js"></script>
     </body>
