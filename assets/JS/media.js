@@ -22,3 +22,10 @@ video.addEventListener('timeupdate', function(){
         btn.className = 'play';
     }
 })
+var currentVolume;
+currentVolume = document.getElementById("currentVolume");
+currentVolume.addEventListener("change", setvolume, false)
+
+function setvolume(){
+    video.volume = currentVolume.value/100;
+}
